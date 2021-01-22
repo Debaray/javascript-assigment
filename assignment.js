@@ -1,3 +1,4 @@
+//https://github.com/Debaray/javascript-assigment
 function kilometerToMeter(inputKilometer) {
     //checking function parameter is number or not
     if (typeof inputKilometer != "number") {
