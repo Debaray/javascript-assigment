@@ -25,7 +25,6 @@ function budgetCalculator(amountOfWatch, amountOfPhone, amountOfLaptop) {
     if (typeof amountOfLaptop != "number") {
         return "Please input a number for amount of Laptop.";
     }
-
     //checking function parameter is integer number or not
     if (Number.isInteger(amountOfWatch) == false) {
         return "Please input a integer number for amount of Watch.";
@@ -36,7 +35,6 @@ function budgetCalculator(amountOfWatch, amountOfPhone, amountOfLaptop) {
     if (Number.isInteger(amountOfLaptop) == false) {
         return "Please input a integer number for amount of Laptop.";
     }
-
     //checking function parameter is negative number or not
     if (amountOfWatch < 0) {
         return "The amount of Watch cannot be negative! Please insert a positive number.";
@@ -94,7 +92,6 @@ function hotelCost(numberOfDaysStayAtHotel) {
 }
 
 function megaFriend(friendsNameList) {
-
     //check function parameter is array or not
     if (typeof friendsNameList != "object") {
         return "Please pass an array as input.";
@@ -108,7 +105,6 @@ function megaFriend(friendsNameList) {
     if (typeof megaFriendName == "undefined") {
         return "Please check all array elements. All elements should be a string.";
     }
-
     var megaFriendNameLength = friendsNameList[0].length;
     for (var i = 0; i < friendsNameList.length; i++) {
         //check all array element is string or not
@@ -123,12 +119,3 @@ function megaFriend(friendsNameList) {
     }
     return megaFriendName;
 }
-var kiloMeterToMeter = kilometerToMeter(.1);
-console.log(kiloMeterToMeter);
-var budgetCalculation = budgetCalculator(1, 2, 2);
-console.log(budgetCalculation);
-var hotetCostCalculation = hotelCost(21);
-console.log(hotetCostCalculation);
-var friendsName = ["", "", "", "", ""];
-var checkMegaFriend = megaFriend(friendsName);
-console.log(checkMegaFriend);
